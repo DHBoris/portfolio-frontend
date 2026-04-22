@@ -1,6 +1,6 @@
 # Portfolio Frontend
 
-Portfolio de Boris Dhaene — développeur Full Stack Junior basé en Belgique.
+Portfolio de Boris Dhaene — développeur Full Stack Junior basé en France.
 
 ## Stack
 
@@ -29,9 +29,6 @@ cd portfolio-frontend
 
 # Installer les dépendances
 npm install
-
-# Copier et remplir les variables d'environnement
-cp .env.example .env
 ```
 
 ## Variables d'environnement
