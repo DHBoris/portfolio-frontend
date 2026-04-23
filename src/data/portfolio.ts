@@ -34,14 +34,23 @@ export const techs: Tech[] = [
 export const projects: Project[] = [
   {
     title: 'Police de Konoha',
-    desc: 'Web app full stack de gestion interne pour un serveur roleplay Naruto — casiers judiciaires, mandats d\'arrêt, carnet d\'amendes, organigramme et système de rôles hiérarchisés.',
+    desc: 'Web app full stack de gestion interne pour le serveur FSC roleplay Naruto, casiers judiciaires, mandats d\'arrêt, carnet d\'amendes, organigramme et système de rôles hiérarchisés.',
     tags: ['React', 'Node.js', 'MongoDB', 'JWT'],
     color: 'from-red-950/60 to-neutral-950/40',
     accent: '#cc1a1a',
     status: 'Live',
     demo: 'https://konoha-police.vercel.app/#accueil',
     repo: '#',
-    images: ['/images/konoha-police-login.png', '/images/konoha-police-dashboard.png'],
+    images: [
+      '/images/konoha-police-login.png',
+      { src: '/images/konoha-police-dashboard.png', contain: true },
+    ],
+    server: {
+      name: 'FSC | Ninja RP',
+      game: 'Garry\'s Mod',
+      online: 3915,
+      members: 20389,
+    },
   },
   {
     title: 'E-Commerce Platform',

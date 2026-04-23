@@ -8,6 +8,13 @@ export interface Tech {
   icon: string;
 }
 
+export interface ProjectServer {
+  name: string;
+  game: string;
+  online: number;
+  members: number;
+}
+
 export interface Project {
   title: string;
   desc: string;
@@ -17,7 +24,8 @@ export interface Project {
   status: 'Live' | 'En cours';
   demo: string;
   repo: string;
-  images?: string[];
+  images?: Array<string | { src: string; contain?: boolean }>;
+  server?: ProjectServer;
 }
 
 export interface SkillCategory {
