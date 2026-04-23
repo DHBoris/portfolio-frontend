@@ -17,6 +17,7 @@ export interface Project {
   status: 'Live' | 'En cours';
   demo: string;
   repo: string;
+  images?: string[];
 }
 
 export interface SkillCategory {

@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import { FadeIn } from '@/components/ui/FadeIn';
 import { SectionHeader } from '@/components/ui/SectionHeader';
 import { projects, person } from '@/data/portfolio';
@@ -19,7 +20,16 @@ function StatusPill({ status }: { status: Project['status'] }) {
 }
 
 function ProjectCard({ project, delay }: { project: Project; delay: number }) {
-  const { title, desc, tags, color, accent, status, demo, repo } = project;
+  const { title, desc, tags, color, accent, status, demo, repo, images } = project;
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  useEffect(() => {
+    if (!images || images.length < 2) return;
+    const timer = setInterval(() => {
+      setActiveIndex((i) => (i + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(timer);
+  }, [images]);
 
   return (
     <FadeIn delay={delay}>
@@ -27,12 +37,40 @@ function ProjectCard({ project, delay }: { project: Project; delay: number }) {
         className={`border border-white/[0.08] rounded-2xl overflow-hidden bg-gradient-to-br ${color} backdrop-blur-sm group transition-all duration-300 hover:-translate-y-1.5 hover:shadow-[0_24px_60px_rgba(100,206,251,0.08)]`}
       >
         <div
-          className="h-40 md:h-48 relative flex items-center justify-center"
-          style={{ background: `radial-gradient(ellipse at center, ${accent}18 0%, transparent 70%)` }}
+          className="h-52 md:h-60 relative flex items-center justify-center overflow-hidden"
+          style={images ? undefined : { background: `radial-gradient(ellipse at center, ${accent}18 0%, transparent 70%)` }}
         >
-          <div className="text-6xl font-black tracking-tighter opacity-10 text-white select-none">
-            {title.charAt(0)}
-          </div>
+          {images ? (
+            <>
+              {images.map((src, i) => (
+                <img
+                  key={src}
+                  src={src}
+                  alt={`${title} - vue ${i + 1}`}
+                  className="absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-1000"
+                  style={{ opacity: i === activeIndex ? 1 : 0 }}
+                />
+              ))}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+              <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-2 z-10">
+                {images.map((_, i) => (
+                  <span
+                    key={i}
+                    className="rounded-full transition-all duration-300"
+                    style={{
+                      width: i === activeIndex ? '16px' : '6px',
+                      height: '6px',
+                      background: i === activeIndex ? '#fff' : 'rgba(255,255,255,0.3)',
+                    }}
+                  />
+                ))}
+              </div>
+            </>
+          ) : (
+            <div className="text-6xl font-black tracking-tighter opacity-10 text-white select-none">
+              {title.charAt(0)}
+            </div>
+          )}
 
           <div className="absolute top-4 right-4">
             <StatusPill status={status} />

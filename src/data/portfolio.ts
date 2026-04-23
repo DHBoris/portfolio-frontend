@@ -33,6 +33,17 @@ export const techs: Tech[] = [
 
 export const projects: Project[] = [
   {
+    title: 'Police de Konoha',
+    desc: 'Web app full stack de gestion interne pour un serveur roleplay Naruto — casiers judiciaires, mandats d\'arrêt, carnet d\'amendes, organigramme et système de rôles hiérarchisés.',
+    tags: ['React', 'Node.js', 'MongoDB', 'JWT'],
+    color: 'from-red-950/60 to-neutral-950/40',
+    accent: '#cc1a1a',
+    status: 'Live',
+    demo: 'https://konoha-police.vercel.app/#accueil',
+    repo: '#',
+    images: ['/images/konoha-police-login.png', '/images/konoha-police-dashboard.png'],
+  },
+  {
     title: 'E-Commerce Platform',
     desc: 'Application full stack avec panier, paiement Stripe, dashboard admin et gestion des stocks en temps réel.',
     tags: ['Next.js', 'Node.js', 'PostgreSQL', 'Stripe'],
