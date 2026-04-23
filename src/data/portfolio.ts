@@ -2,12 +2,12 @@ import type { Person, NavLink, Tech, Project, SkillCategory, EducationItem } fro
 
 export const person: Person = {
   name: 'Boris Dhaene',
-  title: 'Full Stack Web Developer Junior',
+  title: 'Développeur Web Full Stack Junior',
   tagline: "Passionné par la création d'expériences web modernes, performantes et accessibles.",
   status: 'Disponible — Présentiel / Remote',
-  email: 'boris.dhaene@email.com',
+  email: 'dhaene62590@gmail.com',
   linkedin: 'https://linkedin.com/in/borisdhaene',
-  github: 'https://github.com/borisdhaene',
+  github: 'https://github.com/DHBoris',
   cv: '#',
 };
 
@@ -21,12 +21,12 @@ export const navLinks: NavLink[] = [
 export const techs: Tech[] = [
   { name: 'React', icon: '⚛' },
   { name: 'Next.js', icon: '▲' },
+  { name: 'Vue.js', icon: '💚' },
   { name: 'Node.js', icon: '⬡' },
   { name: 'TypeScript', icon: 'TS' },
   { name: 'PostgreSQL', icon: '🐘' },
   { name: 'MongoDB', icon: '🍃' },
   { name: 'Tailwind', icon: '💨' },
-  { name: 'Docker', icon: '🐳' },
   { name: 'Git', icon: '⑂' },
   { name: 'REST API', icon: '⌁' },
 ];
@@ -77,35 +77,47 @@ export const projects: Project[] = [
 export const skills: SkillCategory[] = [
   {
     title: 'Frontend',
-    items: ['React / Next.js', 'TypeScript', 'Tailwind CSS', 'HTML5 / CSS3', 'Responsive Design'],
+    items: ['React / Next.js', 'Vue.js / Redux', 'TypeScript / JS ES6+', 'Tailwind CSS / CSS3', 'Responsive Design / Figma'],
   },
   {
     title: 'Backend',
-    items: ['Node.js / Express', 'REST APIs', 'PostgreSQL / MySQL', 'MongoDB', 'JWT Auth'],
+    items: ['Node.js / Express.js', 'Symfony / PHP', 'API REST / JWT Auth', 'MongoDB / MySQL', 'PostgreSQL / SQL'],
   },
   {
-    title: 'DevOps & Outils',
-    items: ['Git / GitHub', 'Docker', 'CI/CD (GitHub Actions)', 'Linux / CLI', 'Figma'],
+    title: 'Outils & Méthodes',
+    items: ['Git / GitHub / GitLab', 'Vercel / Render', 'Vite / Webpack / Postman', 'Agile / Scrum', 'Code review / Tests unitaires'],
   },
 ];
 
 export const education: EducationItem[] = [
   {
-    year: '2024 – 2025',
-    title: 'Formation Full Stack Web Developer',
-    org: 'BeCode — Bruxelles',
-    desc: 'Formation intensive de 7 mois — HTML/CSS, JavaScript, React, Node.js, bases de données, méthodes agiles.',
+    year: '2022 – 2023',
+    title: 'Concepteur Développeur d\'Applications (Alternance)',
+    org: 'AFPA Euratechnologies — Lille',
+    desc: 'En alternance chez Curioo, Tourcoing. Développement de sites vitrines et web apps pour clients variés (Vue.js, Next.js, Node.js). Réunions client, recueil des besoins et recette fonctionnelle.',
   },
   {
-    year: '2023',
-    title: 'Autodidacte & Certifications',
-    org: 'freeCodeCamp · Udemy · The Odin Project',
-    desc: 'JavaScript Algorithms & Data Structures, Responsive Web Design, React & Redux, APIs REST.',
+    year: '2021 – 2022',
+    title: 'Développeur Web et Web Mobile',
+    org: 'AFPA Euratechnologies — Lille',
+    desc: 'Formation aux fondamentaux du web, JavaScript, React et Node.js. Stage chez Curioo — prise en main de Symfony, mise en place d\'architecture applicative et création de maquettes Figma.',
   },
   {
-    year: '2022',
-    title: 'Baccalauréat',
-    org: 'Athénée Royal — Belgique',
-    desc: 'Option Mathématiques & Sciences. Bonne base analytique et résolution de problèmes.',
+    year: '2020 – 2021',
+    title: 'Licence 3 Électronique et Télécommunications',
+    org: 'UPHF — Valenciennes',
+    desc: 'Base solide en logique numérique, algorithmes et systèmes. Reconversion vers le développement web à l\'issue de cette année.',
+  },
+  {
+    year: '2017 – 2019',
+    title: 'BTS Systèmes Numériques',
+    org: 'Lycée Ozanam — Lille',
+    desc: 'Formation technique en systèmes, réseaux et électronique numérique. Solide culture technique à la base de mon approche du développement.',
+  },
+  {
+    year: '2014',
+    title: 'Baccalauréat Scientifique',
+    org: 'Lycée Diderot — Carvin',
+    desc: 'Spécialité Mathématiques. Base analytique et logique appliquée à la résolution de problèmes.',
   },
 ];
