@@ -99,9 +99,9 @@ export function Hero() {
             {...fadeUp(0.1)}
             className="text-white/60 text-xs md:text-sm tracking-widest uppercase mb-5 md:mb-7 flex items-center gap-3"
           >
-            <span className="w-8 h-px bg-accent/40 inline-block" />
+            <span className="hidden md:inline-block w-8 h-px bg-accent/40" />
             {person.title}
-            <span className="w-8 h-px bg-accent/40 inline-block" />
+            <span className="hidden md:inline-block w-8 h-px bg-accent/40" />
           </motion.p>
 
           <motion.h1

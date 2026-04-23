@@ -119,7 +119,7 @@ function ContactForm() {
   }
 
   const inputClass = (hasError: boolean) =>
-    `w-full bg-white/5 border rounded-xl px-4 py-3 text-white text-sm placeholder-white/20 outline-none transition-colors ${
+    `w-full bg-white/5 border rounded-xl px-4 py-3 text-white text-base md:text-sm placeholder-white/20 outline-none transition-colors ${
       hasError ? 'border-red-500/50' : 'border-white/10 focus:border-accent/40'
     }`;
 
