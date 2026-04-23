@@ -102,6 +102,12 @@ export const skills: SkillCategory[] = [
 
 export const education: EducationItem[] = [
   {
+    year: 'Juil. 2023 – Déc. 2023',
+    title: 'Développeur Web Full Stack',
+    org: 'Incubateur Euratechnologies — Lille',
+    desc: 'Développement d\'une plateforme e-commerce en environnement startup. Frontend React, Backend Node.js / Express. Gestion de backlog en Agile, revue de code et déploiement en recette.',
+  },
+  {
     year: '2022 – 2023',
     title: 'Concepteur Développeur d\'Applications (Alternance)',
     org: 'AFPA Euratechnologies — Lille',
