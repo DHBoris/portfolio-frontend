@@ -1,4 +1,3 @@
-import { useCursorGlow } from '@/hooks/useCursorGlow';
 import { Nav } from '@/components/Nav';
 import { Hero } from '@/components/Hero';
 import { TechStrip } from '@/components/TechStrip';
@@ -9,8 +8,6 @@ import { Contact } from '@/components/Contact';
 import { Footer } from '@/components/Footer';
 
 export default function App() {
-  useCursorGlow();
-
   return (
     <>
       <Nav />

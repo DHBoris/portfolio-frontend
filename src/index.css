@@ -20,6 +20,11 @@
   }
 }
 
+@keyframes shine-sweep {
+  0% { background-position: -250% center; }
+  100% { background-position: 250% center; }
+}
+
 @layer utilities {
   .shiny-text {
     background: linear-gradient(
@@ -37,16 +42,4 @@
     -webkit-text-fill-color: transparent;
     animation: shine-sweep 3s linear infinite;
   }
-}
-
-#cursor-glow {
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  width: 320px;
-  height: 320px;
-  border-radius: 50%;
-  background: radial-gradient(circle, rgba(100, 206, 251, 0.055) 0%, transparent 70%);
-  transform: translate(-50%, -50%);
-  transition: left 0.08s ease-out, top 0.08s ease-out;
 }
