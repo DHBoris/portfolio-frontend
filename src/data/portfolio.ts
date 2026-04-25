@@ -88,36 +88,6 @@ export const projects: Project[] = [
     repoBack: 'https://github.com/DHBoris/la-capsule-backend',
     images: ['/images/la-capsule-landing.png'],
   },
-  {
-    title: 'Social Dashboard',
-    desc: 'Dashboard analytics avec visualisation de données, authentification JWT et API RESTful.',
-    tags: ['React', 'Express', 'MongoDB', 'Chart.js'],
-    color: 'from-purple-900/40 to-pink-900/20',
-    accent: '#a78bfa',
-    status: 'Live',
-    demo: '#',
-    repo: '#',
-  },
-  {
-    title: 'Task Manager App',
-    desc: 'Application de gestion de tâches collaborative avec WebSockets, drag & drop et notifications push.',
-    tags: ['React', 'Socket.io', 'Node.js', 'Redis'],
-    color: 'from-emerald-900/40 to-teal-900/20',
-    accent: '#34d399',
-    status: 'En cours',
-    demo: '#',
-    repo: '#',
-  },
-  {
-    title: 'Portfolio API',
-    desc: 'API REST documentée (OpenAPI) avec cache, rate limiting, CI/CD automatisé via GitHub Actions.',
-    tags: ['Node.js', 'TypeScript', 'Docker', 'GitHub Actions'],
-    color: 'from-orange-900/40 to-red-900/20',
-    accent: '#fb923c',
-    status: 'Live',
-    demo: '#',
-    repo: '#',
-  },
 ];
 
 export const skills: SkillCategory[] = [
