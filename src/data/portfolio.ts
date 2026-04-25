@@ -53,6 +53,18 @@ export const projects: Project[] = [
     },
   },
   {
+    title: 'Konoha Production & Logistique',
+    desc: 'Web app de gestion fiscale pour le serveur FSC roleplay Naruto, collectes ninja, suivi des paiements, calcul des taxes par rang et rapports financiers avec système de rôles.',
+    tags: ['React', 'Node.js', 'MongoDB', 'JWT'],
+    color: 'from-green-950/60 to-neutral-950/40',
+    accent: '#22c55e',
+    status: 'Live',
+    demo: '#',
+    repo: 'https://github.com/mathounrp-source/konoha-nrp',
+    repoBack: 'https://github.com/ZenToki62/konoha-api',
+    images: ['/images/konoha-pl.png'],
+  },
+  {
     title: 'Portfolio',
     desc: 'Portfolio full stack, modal de projets, formulaire de contact, animations Framer Motion et design system Tailwind. Workflow Git dev/main avec déploiement continu sur Vercel.',
     tags: ['React', 'TypeScript', 'Tailwind', 'Framer Motion', 'Node.js'],
