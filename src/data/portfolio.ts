@@ -6,7 +6,7 @@ export const person: Person = {
   tagline: "Passionné par la création d'expériences web modernes, performantes et accessibles.",
   status: 'Disponible — Présentiel / Remote',
   email: 'dhaene62590@gmail.com',
-  linkedin: 'https://linkedin.com/in/borisdhaene',
+  linkedin: 'https://www.linkedin.com/in/boris-dhaene-549559184/',
   github: 'https://github.com/DHBoris',
   cv: '#',
 };
