@@ -24,6 +24,7 @@ export interface Project {
   status: 'Live' | 'En cours';
   demo: string;
   repo: string;
+  repoBack?: string;
   images?: Array<string | { src: string; contain?: boolean }>;
   server?: ProjectServer;
 }

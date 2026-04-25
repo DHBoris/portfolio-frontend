@@ -58,9 +58,10 @@ export const projects: Project[] = [
     tags: ['React', 'Next.js', 'Node.js'],
     color: 'from-[#1c1c10]/80 to-neutral-950/60',
     accent: '#c9a96e',
-    status: 'Live',
+    status: 'En cours',
     demo: '#',
     repo: 'https://github.com/DHBoris/la-capsule-frontend',
+    repoBack: 'https://github.com/DHBoris/la-capsule-backend',
     images: ['/images/la-capsule-landing.png'],
   },
   {
