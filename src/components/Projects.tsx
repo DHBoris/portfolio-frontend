@@ -140,9 +140,11 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
 
           {/* Right — details */}
           <div className="flex flex-col p-7 md:p-8 flex-1 min-w-0">
-            <div className="flex items-start justify-between gap-3 mb-4">
+            <div className="mb-4">
+              <div className="mb-2">
+                <StatusPill status={status} />
+              </div>
               <h2 className="text-white font-semibold text-xl leading-tight">{title}</h2>
-              <StatusPill status={status} />
             </div>
 
             <p className="text-white/55 text-sm leading-relaxed mb-6">{desc}</p>
