@@ -208,8 +208,7 @@ export function Contact() {
               className="mb-6"
             />
             <p className="text-white/50 text-sm leading-relaxed mb-10 max-w-sm">
-              Je suis ouvert aux opportunités — stage, alternance, premier emploi ou projets
-              freelance. N'hésitez pas à me contacter !
+              Ouvert aux projets freelance ainsi qu'aux opportunités d'emploi. N'hésitez pas à me contacter !
             </p>
             <div className="flex flex-col gap-4">
               {CONTACT_LINKS.map((link) => (
