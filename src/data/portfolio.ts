@@ -54,7 +54,7 @@ export const projects: Project[] = [
   },
   {
     title: 'La Capsule',
-    desc: 'Web app pour un torréfacteur de café — développée en équipe (dev, testeur, designer UX/UI), puis entièrement modernisée en solo avec une stack Next.js mise à jour.',
+    desc: 'Web app pour un torréfacteur de café, développée en équipe (dev, testeur, designer UX/UI), puis entièrement modernisée en solo avec une stack Next.js mise à jour.',
     tags: ['React', 'Next.js', 'Node.js'],
     color: 'from-[#1c1c10]/80 to-neutral-950/60',
     accent: '#c9a96e',
