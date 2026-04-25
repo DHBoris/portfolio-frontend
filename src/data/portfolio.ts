@@ -58,7 +58,7 @@ export const projects: Project[] = [
     tags: ['React', 'Node.js', 'MongoDB', 'JWT'],
     color: 'from-green-950/60 to-neutral-950/40',
     accent: '#22c55e',
-    status: 'Live',
+    status: 'En cours',
     demo: '#',
     repo: 'https://github.com/mathounrp-source/konoha-nrp',
     repoBack: 'https://github.com/ZenToki62/konoha-api',
