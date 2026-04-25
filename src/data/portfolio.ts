@@ -70,7 +70,7 @@ export const projects: Project[] = [
     color: 'from-cyan-950/40 to-neutral-950/60',
     accent: '#64CEFB',
     status: 'Live',
-    demo: 'https://portfolio-frontend-blush-nine.vercel.app',
+    demo: 'https://portfolio-dhaene-boris.netlify.app',
     repo: 'https://github.com/DHBoris/portfolio-frontend',
     repoBack: 'https://github.com/DHBoris/portfolio-backend',
     video: 'https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260328_105406_16f4600d-7a92-4292-b96e-b19156c7830a.mp4',
