@@ -26,6 +26,7 @@ export interface Project {
   repo: string;
   repoBack?: string;
   images?: Array<string | { src: string; contain?: boolean }>;
+  video?: string;
   server?: ProjectServer;
 }
 

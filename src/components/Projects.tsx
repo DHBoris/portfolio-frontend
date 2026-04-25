@@ -73,6 +73,7 @@ function Carousel({ images, title }: { images: ImageEntry[]; title: string }) {
   );
 }
 
+
 function ProjectModal({ project, onClose }: { project: Project; onClose: () => void }) {
   const { title, desc, tags, accent, status, demo, repo, repoBack, images, color, server } = project;
 
@@ -121,8 +122,8 @@ function ProjectModal({ project, onClose }: { project: Project; onClose: () => v
         </button>
 
         <div className="flex flex-col md:flex-row">
-          {/* Left — carousel */}
-          <div className={`relative md:w-[55%] h-56 md:h-auto min-h-[280px] bg-gradient-to-br ${color} flex-shrink-0`}>
+          {/* Left — carousel / video */}
+          <div className={`relative md:w-[55%] h-56 md:h-auto min-h-[280px] bg-gradient-to-br ${color} flex-shrink-0 overflow-hidden`}>
             {images && images.length > 0 ? (
               <Carousel images={normalizeImages(images)} title={title} />
             ) : (
@@ -236,7 +237,7 @@ function ProjectCard({
   delay: number;
   onClick: () => void;
 }) {
-  const { title, desc, tags, color, accent, status, images } = project;
+  const { title, desc, tags, color, accent, status, images, video } = project;
   const normalizedImages = normalizeImages(images);
 
   return (
@@ -247,9 +248,21 @@ function ProjectCard({
       >
         <div
           className="h-52 md:h-60 relative flex items-center justify-center overflow-hidden"
-          style={normalizedImages.length ? undefined : { background: `radial-gradient(ellipse at center, ${accent}18 0%, transparent 70%)` }}
+          style={normalizedImages.length || video ? undefined : { background: `radial-gradient(ellipse at center, ${accent}18 0%, transparent 70%)` }}
         >
-          {normalizedImages.length ? (
+          {video ? (
+            <>
+              <video
+                autoPlay loop muted playsInline
+                className="absolute inset-0 w-full h-full object-cover"
+                style={{ opacity: 0.6 }}
+                aria-hidden="true"
+              >
+                <source src={video} type="video/mp4" />
+              </video>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+            </>
+          ) : normalizedImages.length ? (
             <Carousel images={normalizedImages} title={title} />
           ) : (
             <div className="text-6xl font-black tracking-tighter opacity-10 text-white select-none">
