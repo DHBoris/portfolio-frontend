@@ -87,10 +87,16 @@ function ContactForm() {
   async function onSubmit(data: ContactFormData) {
     setServerError('');
     try {
-      const res = await fetch('/api/contact', {
+      const body = new URLSearchParams({
+        'form-name': 'contact',
+        name: data.name,
+        email: data.email,
+        message: data.message,
+      }).toString();
+      const res = await fetch('/', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data),
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body,
       });
       if (!res.ok) throw new Error();
       setSent(true);
@@ -125,10 +131,14 @@ function ContactForm() {
 
   return (
     <form
+      name="contact"
+      method="POST"
+      data-netlify="true"
       onSubmit={handleSubmit(onSubmit)}
       noValidate
       className="border border-white/[0.08] rounded-2xl p-7 md:p-8 bg-white/[0.02] flex flex-col gap-5"
     >
+      <input type="hidden" name="form-name" value="contact" />
       <InputField id="contact-name" label="Nom complet" error={errors.name?.message}>
         <input
           id="contact-name"
