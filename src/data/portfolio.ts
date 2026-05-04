@@ -8,7 +8,7 @@ export const person: Person = {
   email: 'dhaene62590@gmail.com',
   linkedin: 'https://www.linkedin.com/in/boris-dhaene-549559184/',
   github: 'https://github.com/DHBoris',
-  cvDev: '#',
+  cvDev: '/images/CV_Boris_Dhaene_Dev_Full_Stack.pdf',
   cvPolyvalent: '#',
 };
 
