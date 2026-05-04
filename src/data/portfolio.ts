@@ -8,7 +8,8 @@ export const person: Person = {
   email: 'dhaene62590@gmail.com',
   linkedin: 'https://www.linkedin.com/in/boris-dhaene-549559184/',
   github: 'https://github.com/DHBoris',
-  cv: '#',
+  cvDev: '#',
+  cvPolyvalent: '#',
 };
 
 export const navLinks: NavLink[] = [

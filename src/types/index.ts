@@ -50,7 +50,8 @@ export interface Person {
   email: string;
   linkedin: string;
   github: string;
-  cv: string;
+  cvDev: string;
+  cvPolyvalent: string;
 }
 
 export interface ContactFormData {
