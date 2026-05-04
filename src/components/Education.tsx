@@ -65,6 +65,8 @@ export function Education() {
           <a
             href={person.cvDev}
             download
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-accent/40 rounded-full px-6 py-3.5 text-sm font-medium text-white/70 hover:text-white transition-all duration-200"
           >
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -77,6 +79,8 @@ export function Education() {
           <a
             href={person.cvPolyvalent}
             download
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-accent/40 rounded-full px-6 py-3.5 text-sm font-medium text-white/70 hover:text-white transition-all duration-200"
           >
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">

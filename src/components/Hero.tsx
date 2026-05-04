@@ -128,6 +128,8 @@ export function Hero() {
             <a
               href={person.cvDev}
               download
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2.5 border border-white/20 hover:border-white/50 text-white/80 hover:text-white rounded-full px-6 md:px-7 py-3 md:py-3.5 text-sm font-medium transition-all duration-200 bg-white/5 backdrop-blur-sm"
             >
               <IconDownload />
@@ -137,6 +139,8 @@ export function Hero() {
             <a
               href={person.cvPolyvalent}
               download
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2.5 border border-white/20 hover:border-white/50 text-white/80 hover:text-white rounded-full px-6 md:px-7 py-3 md:py-3.5 text-sm font-medium transition-all duration-200 bg-white/5 backdrop-blur-sm"
             >
               <IconDownload />
