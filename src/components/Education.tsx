@@ -61,28 +61,30 @@ export function Education() {
           ))}
         </div>
 
-        <FadeIn className="mt-4">
+        <FadeIn className="mt-4 flex flex-wrap gap-3">
           <a
-            href={person.cv}
+            href={person.cvDev}
             download
             className="inline-flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-accent/40 rounded-full px-6 py-3.5 text-sm font-medium text-white/70 hover:text-white transition-all duration-200"
           >
-            <svg
-              width="15"
-              height="15"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              aria-hidden="true"
-            >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
               <polyline points="7 10 12 15 17 10" />
               <line x1="12" y1="15" x2="12" y2="3" />
             </svg>
-            Télécharger mon CV complet (PDF)
+            CV Dev (PDF)
+          </a>
+          <a
+            href={person.cvPolyvalent}
+            download
+            className="inline-flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-accent/40 rounded-full px-6 py-3.5 text-sm font-medium text-white/70 hover:text-white transition-all duration-200"
+          >
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
+            CV Polyvalent (PDF)
           </a>
         </FadeIn>
       </div>
